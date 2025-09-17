@@ -3,71 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MH Sarkar 99 - SkillKart Style</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    nav { background:#333; padding:10px; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#f39c12; }
 
-    .hero {
-      background:#1abc9c; color:#fff; text-align:center; padding:80px 20px;
-    }
-    .hero h1 { font-size:48px; margin-bottom:20px; }
-    .hero button {
-      padding:12px 25px; background:#f39c12; color:#fff; border:none;
-      border-radius:5px; cursor:pointer; font-size:18px;
-    }
-
-    .products { padding:50px 20px; text-align:center; }
-    .products h2 { margin-bottom:30px; }
-    .card {
-      display:inline-block; width:250px; margin:15px; border:1px solid #ddd;
-      border-radius:10px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    }
-    .card img { width:100%; }
-    .card h3 { padding:10px; }
-    .card button {
-      margin:10px; padding:10px 20px; background:#1abc9c; color:#fff; border:none; border-radius:5px;
-    }
-    footer { background:#333; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-  </style>
+  <title>NextGenAdi4U</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Welcome to MH Sarkar 99</h1>
-    <p>Your Digital Packs & Courses in One Place</p>
-    <button>Shop Now</button>
+  <header>
+  <div class="header-left">
+    👥 Active Users: <span id="activeCount">0</span>
   </div>
 
-  <!-- Products Section -->
-  <div class="products" id="products">
-    <h2>🔥 Our Products</h2>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150" alt="Free Pack">
-      <h3>Free Pack</h3>
-      <a href="YOUR_FREE_LINK"><button>Download</button></a>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150" alt="Paid Pack">
-      <h3>Pro Pack - ₹99</h3>
-      <a href="YOUR_PAID_LINK"><button>Buy Now</button></a>
-    </div>
+  <div class="header-center">
+    <h1 class="logo">NextGenAdi4U</h1>
   </div>
 
-  <!-- Footer -->
+  <div class="header-right">
+    <nav>
+      <a href="index.html">Home</a>
+     
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  
+
+  <section class="products">
+  <h2>Available Bundles</h2>
+
+  <a href="editing-pack.html" class="item">🎬  Editing Pack</a>
+  <a href="reels-pack.html" class="item">📱  Reels Bundle</a>
+  <a href="animation-pack.html" class="item">✨  2D Animation Bundle</a>
+  <a href="music-pack.html" class="item">🎵  Background Music</a>
+  <a href="luts-presets.html" class="item">🎨  LUTs & Presets</a>
+  <a href="courses-pack.html" class="item">🚀  Courses Pack</a>
+  <a href="paid-pack.html" class="item">💸  ₹PAID Pack</a>
+  <a href="our-pack.html" class="item">🗿  OUR SERVICES</a>
+  <a href="games-pack.html" class="item">📺  PC Games</a>
+  <a href="game-pack.html" class="item">📱  Mobile Games</a>
+  <a href="software-pack.html" class="item">💻  All Softwares</a>
+  <a href="steam-account.html" class="item">💻  Steam Accounts</a>
+    
+</section>
+
+
   <footer>
-    © 2025 MH Sarkar 99 | All Rights Reserved
+  <p>© 2025 NextGenAdi4U | All Rights Reserved</p>
+  <p>
+    <a href="https://www.youtube.com/@YourChannel" target="_blank">📺 YouTube</a> |
+    <a href="https://www.instagram.com/YourInsta" target="_blank">📸 Instagram</a> |
+    <a href="https://t.me/+SQxLnfSsx69mM2I1" target="_blank">📢 Telegram</a> |
+    <a href="mailto:adityasarkar96k@gmail.com">📧 Contact</a>
+  </p>
+</footer>
+
+<script>
+  // Random active users counter (demo purpose)
+  function updateActiveUsers() {
+    let randomUsers = Math.floor(Math.random() * 200) + 19;
+    document.getElementById("activeCount").innerText = randomUsers;
+  }
+
+  updateActiveUsers();
+  setInterval(updateActiveUsers, 5000);
+</script>
+
+
   </footer>
 </body>
 </html>
